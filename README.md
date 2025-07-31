@@ -77,7 +77,7 @@ The provided script is what processes the data you export from the Unity Utility
 1. Ensure you have your ReMapper script fully setup. 
 2. Import the script with the following import statement: <br>
 
-```
+```ts
 import { Chrunity } from 'https://raw.githubusercontent.com/UGEcko/Chrunity/refs/heads/main/ChromaHelper.ts'
 ```
 
