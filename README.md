@@ -14,7 +14,7 @@ A Unity tool allowing placement of Chroma objects (Geometry) in the Scene view.
 
 2. Open your Unity project, and copy the Chrunity_Unity folder to your Assets folder.
 
-3. You're done! Read the [Utility Usage](https://github.com/UGEcko/Chrunity?tab=readme-ov-file#utilityusage(unity)) and [Script Usage](https://github.com/UGEcko/Chrunity?tab=readme-ov-file#scriptusage) sections to continue.
+3. You're done! Read the [Utility Usage](https://github.com/UGEcko/Chrunity?tab=readme-ov-file#utility-usage-unity) and [Script Usage](https://github.com/UGEcko/Chrunity?tab=readme-ov-file#script-usage-remapper) sections to continue.
 
 
 ## Utility Usage (Unity)
