@@ -105,6 +105,10 @@ If you are looking to manually process the Object file for whatever reason, you 
 
 ```ts
 const chrunity = new Chrunity(map, undefined, false); // Set third parameter to false, disabling automatic processing when the class initializes.
+
+chrunity.Objects?.forEach(obj => {
+    // Do your dirty work here
+})
 ```
 
 Now, you can use the `Objects` (Or `DummyObjects` for objects declared as dummy object types) array to iterate over each exported object
