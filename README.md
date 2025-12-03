@@ -8,11 +8,13 @@ A Unity tool allowing placement of Chroma objects (Geometry) in the Scene view.
 
 ## Installation
 
-> Note: It is recommended for you to be using **Unity 2019.4.28**.
+> Note: It is recommended for you to use **Unity 2019.4.28**.
 
 1. Download the Chrunity Repository as a .zip [here](https://github.com/UGEcko/Chrunity/archive/refs/heads/main.zip).
 
-2. Open your Unity project, and copy the Chrunity_Unity folder to your Assets folder.
+2. Open your Unity project, and copy the Chrunity_Unity folder to your Assets folder. 
+
+(If you are using the VivifyTemplate with this tool, delete the _Deps folder inside of the Chrunity folder. Otherwise, you will get errors).
 
 3. You're done! Read the [Utility Usage](https://github.com/UGEcko/Chrunity?tab=readme-ov-file#utility-usage-unity) and [Script Usage](https://github.com/UGEcko/Chrunity?tab=readme-ov-file#script-usage-remapper) sections to continue.
 
@@ -44,9 +46,10 @@ Note: Each object that you wish to be represented as a Geometry Object must have
 
 ### Using the Exporter
 
-> The Exporter is where you export the JSON file that contains the data needed to port over the Chroma objects from Unity to your script. It also contains a few utilities to speed up your workflow.
+The Exporter is where you export the JSON file that contains the data needed to port over the Chroma objects from Unity to your script.
 
-<img width="249" height="365" alt="image" src="https://github.com/user-attachments/assets/685c19ec-b6b8-46b8-ad7f-70a1fa0689fc" />
+<img width="233" height="135" alt="image" src="https://github.com/user-attachments/assets/d0da94d9-11d7-41d4-82fc-60a303fc4f35" />
+
 
 
 Upon installing the Utility into your Unity project, you will be provided with a new tab: <br><img width="589" height="40" alt="image" src="https://github.com/user-attachments/assets/775d85e8-0e68-489a-8526-899c237b78f4" />
@@ -61,12 +64,6 @@ Click `Chrunity > Open Chrunity` to open the Chrunity UI.
 In order to export objects, you must provide an output directory. Click "Find output folder" to do so.
 
 After finding your output directory, you are now able to click the "Export" button. This will write a file to your directory called `chroma_objects.json`.
-
-
-### Using the Utilities
-
-The Utilities are pretty simple, each one allows you to set the Track, Material, or LightType on selected objects. This could be *very* helpful for those who are looking to edit a large amount of Chroma objects at once.
-
 
 ## Script Usage (ReMapper)
 
