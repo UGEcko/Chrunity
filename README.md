@@ -6,6 +6,9 @@ A Unity tool allowing placement of Chroma objects (Geometry) in the Scene view.
 > Warning: It is recommended you have some experience ATLEAST with the Unity UI and Components of GameObjects before using this tool.
 
 
+> Note 2: While interpretation of object data is based around ReMapper. You *could* build your own interpreter for another library or language.
+
+
 ## Installation
 
 > Note: It is recommended for you to use **Unity 2019.4.28**.
