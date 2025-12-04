@@ -1,4 +1,4 @@
-import * as rm from "https://deno.land/x/remapper@4.1.0/src/mod.ts"
+import * as rm from "https://deno.land/x/remapper@4.2.0/src/mod.ts"
 
 interface ChromaObject {
     Name: string,
