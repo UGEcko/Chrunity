@@ -55,18 +55,17 @@ constructor(map: rm.AbstractDifficulty, input: string = "chroma_objects.json", p
         // --------
 
         if (!processOnLoad) return;
-        
-        this.Objects.forEach(object => {
+
+        for(let i = 0; i < this.Objects.length; i++) {
+            const object = this.Objects[i];
+
             if (object.MeshType == "Dummy") {
                 this.DummyObjects?.push(object as DummyObject);
+                continue;
             }
             const type = object.MeshType.toString();
-            
-            let isLight = false;
-            if (object.Material != "") {
-                const mat = map.geometryMaterials[object.Material];
-                if(mat.shader != undefined && mat.shader.toLowerCase().includes("light")) isLight = true;
-            }
+
+            const isLight = this.isLight(object);
 
             rm.geometry(map, {
                 position: object.Transform.Position,
@@ -78,13 +77,16 @@ constructor(map: rm.AbstractDifficulty, input: string = "chroma_objects.json", p
                 lightID: isLight ? object.LightID : undefined,
                 lightType: isLight ? object.LightType : undefined,
             })
-        })
+        }
     }
 
     public isLight(object: ChromaObject): boolean {
         let isLight = false;
             if (object.Material != "") {
                 const mat = this.map.geometryMaterials[object.Material];
+                if (mat == undefined) {
+                    throw Error(`'${object.Material}' is not a valid geometry material. Ensure it is defined before you initialize Chrunity.`);
+                }
                 if(mat.shader != undefined && mat.shader.toLowerCase().includes("light")) isLight = true;
             }
         return isLight;
